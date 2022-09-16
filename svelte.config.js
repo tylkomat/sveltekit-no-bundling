@@ -8,7 +8,10 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter({out: '../no-bundling-prod'})
+		adapter: adapter({out: '../no-bundling-prod'}),
+		csrf: {
+			checkOrigin: false
+		}
 	}
 };
 
